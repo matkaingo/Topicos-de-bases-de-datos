@@ -1,0 +1,20 @@
+1.)Transaccion.
+  1.1)Atomicidad: La transaccion es realizada completamente o no realiza ninguna accion
+  1.2) Consistencia
+  1.3)Aislamiento: Si hay dos o mas transacciones que en un mismo tiempo desean realizar cambio a una misma información, e sistema garantiza 
+    que una transaccion ignore al resto de transacciones
+    1.3.1)Niveles de aislamiento
+      1.3.1.1)Lectura no confirmada(Lectura sucia)
+      1.3.1.2) Lectura confirmada(Lectura no repetible--READ-COMMITTED). Tiene tiempo de espera, no retorna nada.
+      1.3.1.3)Lectura repetible.
+      1.3.1.4)Serializable
+  1.4)Durabilidad: Cuando una transaccion es exitosa y no se pueden desahacer del sistema.    
+    1.4.1)Estados de transaccion: Activa->parcialmente confirmada->Confirmada ó Activa->Fallida->Abortada
+
+2.)Implementación Transacciones (Diapositivas).
+3.)Concurrencia: Cada hilo de ejecucion derá una transacción diferente.
+4.)Bloqueos: Una forma de controlr la concurrencia, hace que cada transaccion debe tener un derecho.
+  4.1)Bloquo binariio: bloquea cuando se va a acceder para leer o escribir.
+  4.2)Bloqueos modo multiple: 3 operaciones bloquear lectura, bloquear escritura, desbloquear.
+  
+  
