@@ -1,0 +1,24 @@
+Redundancia: repite innecesaariamente tuplas o registros.
+Anomalias de actualizacion: cuando al cambiar la informacion de una tupla se descuida el actualizarla en otra.
+Anomalias de eliminacion: Si un conjunto de valores llegan a estar vacios
+
+NORMALIZACOIN 
+  Simplifica los datos.
+  Una gfotrma de ayudar a los diseñadores de base de datos a desarrollar un esquema que minimice lños problemas de logica.
+      
+      GRADOS DE NORMALIZACION
+      
+        PRIMERA: Eliminacion de grupos repetidos
+        SEFUNDA: Que todas las columnas que no tienen llavesean dependientes de la llave primaria
+        TERCERA: Eliminar las dependencias transitivas.
+        
+              nada forma normal no tiene datos repetidos.
+              
+              si un tupla es dependiente de otra no es 2FN
+              
+              3FN, que todas las tuplas de la tabla sean dependientes de la primaria.
+              
+ INDICE
+  Para mejorar la accesibildad a los datos, se hace con una tabla mas en la base de datos.
+    Ej. Punteros, vistas enlazadas. etc...
+  TIPOS DE INDICES-->Agrupado, no agrupado y unico         
